@@ -6,7 +6,6 @@ import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
-import { Button } from 'tcsp-area-catcher';
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
@@ -17,7 +16,6 @@ const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
 function App() {
 	return (
 		<AnimatePresence>
-			<Button/>
 			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
 				<Router>
 					<ScrollToTop />
